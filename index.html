@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/h-logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Hani Mohammed</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#"><img src="images/h-logo.png" alt="" /></a>
+      </div>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="nav-items">
+        <i class="fa-solid fa-play"></i>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <i class="fa-solid fa-play"></i>
+        <li><a href="#" onclick="toggleMenu();">Experience</a></li>
+        <i class="fa-solid fa-play"></i>
+        <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+        <i class="fa-solid fa-play"></i>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <button>Resume</button>
+      </ul>
+      <button class="resume">Resume</button>
+    </div>
+    <div class="accounts">
+      <ul class="profiles">
+        <li>
+          <a href="https://github.com/hani2005"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="email">
+      <a href="mailto:hanim1033@gmail.com">hanim1033@gmail.com</a>
+    </div>
+    <div class="container">
+      <div class="header">
+        <h4>Hello, my name is</h4>
+        <h1>Hani Mohammed.</h1>
+        <h2>I build things for the UI.</h2>
+        <p>
+          I’m a frontend developer with some backend experience such as
+          NodeJs,<br />
+          Express and MongoDb. I'm self-taugth developer where I'm going to
+          show<br />
+          -case my experience through projects that I've built.
+        </p>
+        <button class="contact-email">Let's Talk</button>
+      </div>
+      <div class="about" id="about">
+        <div class="about-text">
+          <h3><b>01.</b>About Me</h3>
+          <p>
+            Hello! My name is Hani and I'm 18 year old living on Egypt<br />
+            with a passion for coding and problem-solving. I specialize in<br />
+            building web applications for the user interface but I also<br />
+            have knowledge with backend techs such as MongoDb,<br />
+            Express, NodeJs, I have a motivation to help my you turn<br />
+            your ideas into working and successful web applications!
+          </p>
+          <p>Here are a few technologies I’ve been working with recently:</p>
+          <div class="about-content">
+            <div class="row-1">
+              <div class="skills">
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Javascript</span>
+              </div>
+              <div class="skills">
+                <i class="fa-solid fa-angle-right"></i>
+                <span>HTML & CSS</span>
+              </div>
+              <div class="skills">
+                <i class="fa-solid fa-angle-right"></i>
+                <span>React JS</span>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="skills">
+                <i class="fa-solid fa-angle-right"></i>
+                <span>MongoDb</span>
+              </div>
+              <div class="skills">
+                <i class="fa-solid fa-angle-right"></i>
+                <span>NodeJS & Express</span>
+              </div>
+              <div class="skills">
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="images/me-3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="work" id="work">
+        <h3><b>02.</b>Projects I've Built</h3>
+        <div class="project">
+          <a href="">
+            <img src="images/tesla.png" alt="" />
+          </a>
+          <div class="project-text">
+            <h4>Featured Project</h4>
+            <h2>Tesla Project</h2>
+            <p>
+              I built a clone of tesla website where I implemented most of<br />
+              the technologies that I know such as React for the frontend<br />
+              ,and Express with NodeJs for the backend & routes<br />
+              .mongodb to save user data at register and login
+            </p>
+            <div class="tech-used">
+              <span>React</span>
+              <span>NodeJs</span>
+              <span>Express</span>
+              <span>MongoDb</span>
+            </div>
+            <div class="view-project">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-text-center">
+            <h4>Featured Project</h4>
+            <h2>Recipe App</h2>
+            <p>
+              A recipe app built with a rest api that has filter by category
+              and<br />
+              search features, I have used react hooks, fetch api,<br />
+              react-router-dom for single page meal details.
+            </p>
+            <div class="tech-used">
+              <span>React</span>
+              <span>Meal Api</span>
+              <span>Functional Components</span>
+            </div>
+            <div class="view-project">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <a href="">
+            <img src="images/tesla.png" alt="" />
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="">
+            <img src="images/tesla.png" alt="" />
+          </a>
+          <div class="project-text">
+            <h4>Featured Project</h4>
+            <h2>Halcyon Theme</h2>
+            <p>
+              A minimal, dark blue theme for VS Code, Sublime Text, Atom<br />
+              iTerm, and more. Available on Visual Studio Marketplace<br />
+              Package Control, Atom Package Manager, and npm
+            </p>
+            <div class="tech-used">
+              <span>VS Code</span>
+              <span>Sublime Text</span>
+              <span>React</span>
+              <span>Javascript</span>
+              <span>HTML</span>
+            </div>
+            <div class="view-project">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-text-center">
+            <h4>Featured Project</h4>
+            <h2>Halcyon Theme</h2>
+            <p>
+              A minimal, dark blue theme for VS Code, Sublime Text, Atom<br />
+              iTerm, and more. Available on Visual Studio Marketplace<br />
+              Package Control, Atom Package Manager, and npm
+            </p>
+            <div class="tech-used">
+              <span>VS Code</span>
+              <span>Sublime Text</span>
+              <span>React</span>
+              <span>Javascript</span>
+              <span>HTML</span>
+            </div>
+            <div class="view-project">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <a href="">
+            <img src="images/tesla.png" alt="" />
+          </a>
+        </div>
+
+        <div class="project">
+          <a href="">
+            <img
+              src="images/tesla.png"
+              alt=""
+            />
+          </a>
+          <div class="project-text">
+            <h4>Featured Project</h4>
+            <h2>Halcyon Theme</h2>
+            <p>
+              A minimal, dark blue theme for VS Code, Sublime Text, Atom<br />
+              iTerm, and more. Available on Visual Studio Marketplace<br />
+              Package Control, Atom Package Manager, and npm
+            </p>
+            <div class="tech-used">
+              <span>VS Code</span>
+              <span>Sublime Text</span>
+              <span>React</span>
+              <span>Javascript</span>
+              <span>HTML</span>
+            </div>
+            <div class="view-project">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-text-center">
+            <h4>Featured Project</h4>
+            <h2>Halcyon Theme</h2>
+            <p>
+              A minimal, dark blue theme for VS Code, Sublime Text, Atom<br />
+              iTerm, and more. Available on Visual Studio Marketplace<br />
+              Package Control, Atom Package Manager, and npm
+            </p>
+            <div class="tech-used">
+              <span>VS Code</span>
+              <span>Sublime Text</span>
+              <span>React</span>
+              <span>Javascript</span>
+              <span>HTML</span>
+            </div>
+            <div class="view-project">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <a href="">
+            <img
+              src="images/tesla.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="githubContainer" id="contact">
+        <h3><b>03.</b>Find Me</h3>
+        <h1 class="githubTitle">
+          If you want to see more of my projects you can click the box below.
+        </h1>
+        <div class="githubChart">
+          <div class="dates">
+            <span>Jan</span>
+            <span>Feb</span>
+            <span>Mar</span>
+            <span>Apr</span>
+            <span>May</span>
+            <span>Jun</span>
+            <span>Jul</span>
+            <span>Agu</span>
+            <span>Sep</span>
+            <span>Oct</span>
+            <span>Nov</span>
+            <span>Dec</span>
+          </div>
+          <a href="https://github.com/hani2005">
+            <div class="boxContainer"></div>
+          </a>
+        </div>
+      </div>
+      <div class="githubSm">
+        <h3><b>03.</b>What's next?</h3>
+        <h2>Get In Touch</h2>
+        <h1>
+          If you want to see more of my projects you can find me on github.
+        </h1>
+        <a href="https://github.com/hani2005">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <ul class="profiles-sm">
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <span>&#169; Built and Designed by Hani Mohammed</span>
+      </div>
+    </div>
+
+    <script>
+      ScrollReveal({
+        reset: false,
+        distance: "60px",
+        duration: 2500,
+        delay: 400
+      })
+
+      ScrollReveal().reveal(".logo", { delay: 100 })
+      ScrollReveal().reveal(".nav-items", { delay: 400 })
+      ScrollReveal().reveal(".resume", { delay: 600 })
+      ScrollReveal().reveal(".header", { delay: 1300, origin: "left" })
+      ScrollReveal().reveal(".accounts, .email", { delay: 1500 })
+      ScrollReveal().reveal(".about, .work, .project, #contact", {
+        delay: 200
+      })
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
