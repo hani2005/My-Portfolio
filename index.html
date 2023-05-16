@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/images/h-logo.png">
+    <link rel="icon" type="image/x-icon" href="/images/h-logo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -28,9 +28,11 @@
         <li><a href="#work" onclick="toggleMenu();">Work</a></li>
         <i class="fa-solid fa-play"></i>
         <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        <button>Resume</button>
+        <a href="/images/my resume (1).pdf" class="ul-resume" download="my-resume"> Resume </a>
       </ul>
-      <button class="resume">Resume</button>
+      <a href="/images/my resume (1).pdf" class="resume" download="my-resume">
+        Resume
+      </a>
     </div>
     <div class="accounts">
       <ul class="profiles">
@@ -40,13 +42,14 @@
           ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/hani_mohammed23"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/hani-mohammed-8244b9274/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </li>
       </ul>
     </div>
@@ -59,7 +62,7 @@
         <h1>Hani Mohammed.</h1>
         <h2>I build things for the UI.</h2>
         <p>
-          I’m a frontend developer with some backend experience such as
+          I'm a frontend developer with some backend experience such as
           NodeJs,<br />
           Express and MongoDb. I'm self-taugth developer where I'm going to
           show<br />
@@ -117,9 +120,6 @@
       <div class="work" id="work">
         <h3><b>02.</b>Projects I've Built</h3>
         <div class="project">
-          <a href="">
-            <img src="images/tesla.png" alt="" />
-          </a>
           <div class="project-text">
             <h4>Featured Project</h4>
             <h2>Tesla Project</h2>
@@ -142,17 +142,18 @@
               ></a>
             </div>
           </div>
+          <a href="">
+            <img src="images/tesla.png" alt="" />
+          </a>
         </div>
 
         <div class="project">
-          <div class="project-text-center">
+          <div class="project-text">
             <h4>Featured Project</h4>
-            <h2>Recipe App</h2>
+            <h2>The Blog</h2>
             <p>
-              A recipe app built with a rest api that has filter by category
-              and<br />
-              search features, I have used react hooks, fetch api,<br />
-              react-router-dom for single page meal details.
+              A blog application where you and other authors can write blogs<br />
+              and edit them, each blog can only be edited by its author.
             </p>
             <div class="tech-used">
               <span>React</span>
@@ -172,9 +173,37 @@
         </div>
 
         <div class="project">
-          <a href="">
-            <img src="images/tesla.png" alt="" />
+          <div class="project-text">
+            <h4>Featured Project</h4>
+            <h2>Food Mood</h2>
+            <p>
+              Food Mood is an application that helps you find recipes from all
+              over the world. I have used theMealDB API to fetch data
+            </p>
+            <div class="tech-used">
+              <span>API</span>
+              <span>Vercel</span>
+              <span>React</span>
+              <span>React Router</span>
+            </div>
+            <div class="view-project">
+              <a href="https://github.com/hani2005/recipe-app-project"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://hani-recipe-app-project-hanim1033-gmailcom.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <a
+            href="https://hani-recipe-app-project-hanim1033-gmailcom.vercel.app/"
+          >
+            <img src="images/food-mood.png" alt="" />
           </a>
+        </div>
+
+        <div class="project">
           <div class="project-text">
             <h4>Featured Project</h4>
             <h2>Halcyon Theme</h2>
@@ -197,10 +226,13 @@
               ></a>
             </div>
           </div>
+          <a href="">
+            <img src="images/tesla.png" alt="" />
+          </a>
         </div>
 
         <div class="project">
-          <div class="project-text-center">
+          <div class="project-text">
             <h4>Featured Project</h4>
             <h2>Halcyon Theme</h2>
             <p>
@@ -228,12 +260,6 @@
         </div>
 
         <div class="project">
-          <a href="">
-            <img
-              src="images/tesla.png"
-              alt=""
-            />
-          </a>
           <div class="project-text">
             <h4>Featured Project</h4>
             <h2>Halcyon Theme</h2>
@@ -256,36 +282,8 @@
               ></a>
             </div>
           </div>
-        </div>
-
-        <div class="project">
-          <div class="project-text-center">
-            <h4>Featured Project</h4>
-            <h2>Halcyon Theme</h2>
-            <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom<br />
-              iTerm, and more. Available on Visual Studio Marketplace<br />
-              Package Control, Atom Package Manager, and npm
-            </p>
-            <div class="tech-used">
-              <span>VS Code</span>
-              <span>Sublime Text</span>
-              <span>React</span>
-              <span>Javascript</span>
-              <span>HTML</span>
-            </div>
-            <div class="view-project">
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
           <a href="">
-            <img
-              src="images/tesla.png"
-              alt=""
-            />
+            <img src="images/tesla.png" alt="" />
           </a>
         </div>
       </div>
@@ -336,7 +334,7 @@
         </li>
       </ul>
       <div class="copyright">
-        <span>&#169; Built and Designed by Hani Mohammed</span>
+        <span>Copyright &#169; Built and Designed by Hani Mohammed</span>
       </div>
     </div>
 

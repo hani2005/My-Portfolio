@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /*=================== General Styles ===================*/
 
@@ -11,7 +12,7 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -25,6 +26,10 @@ body {
 
 .container {
   width: 1000px;
+}
+
+.menuToggle {
+  display: none;
 }
 
 /*=================== Accounts ===================*/
@@ -159,11 +164,9 @@ body {
   background-color: transparent;
   color: #4db5ff;
   margin-left: 2rem;
+  text-decoration: none;
 }
 
-.nav-items button {
-  display: none;
-}
 /*=================== Header ===================*/
 
 .header {
@@ -235,7 +238,7 @@ body {
   color: #252544;
 }
 
-.mob-header {
+.ul-resume {
   display: none;
 }
 /*=================== About ===================*/
@@ -333,7 +336,6 @@ body {
   color: rgba(255, 255, 255, 0.815);
   font-weight: 600;
   margin-bottom: 2rem;
-  margin-left: 3.6rem;
 }
 
 .work h3 b {
@@ -347,15 +349,17 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
+  gap: 10px;
 }
 
 .project img {
-  height: 350px;
+  height: 400px;
+  width: 600px;
   opacity: 0.5;
   transition: 0.5s;
   background-color: #252544;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .project img:hover {
@@ -363,33 +367,8 @@ body {
 }
 
 .project-text {
-  direction: rtl;
   z-index: 10000;
-  margin-left: -3rem;
-}
-
-.project-text-center {
-  z-index: 10000;
-  margin-right: -3rem;
-}
-
-.project-text-center h4 {
-  color: #4db5ff;
-  font-size: 0.8rem;
-  margin-bottom: 0;
-}
-
-.project-text-center h2 {
-  margin-top: 0.5rem;
-  color: rgba(255, 255, 255, 0.815);
-}
-
-.project-text-center p {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #252544;
-  padding: 1.2rem 1.5rem;
-  line-height: 1.2rem;
+  width: 400px;
 }
 
 .project-text h4 {
@@ -418,22 +397,18 @@ body {
 }
 
 .view-project {
+  display: flex;
+  gap: 15px;
   margin-top: 1.3rem;
-  margin-right: 1.2rem;
 }
 
 .view-project i {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.6);
-  margin-left: 0.6rem;
 }
 
 .view-project i:hover {
   color: #4db5ff;
-}
-
-.project-text-center .view-project {
-  margin-left: -0.6rem;
 }
 
 .githubContainer {
@@ -544,6 +519,7 @@ body {
     gap: 25px;
     font-size: 1.4rem;
   }
+
   .profiles-sm a {
     color: rgba(255, 255, 255, 0.815);
   }
@@ -568,8 +544,8 @@ body {
   }
 
   .githubSm h3 {
-    color: #4db5ff;
-    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 1.3rem;
     margin-left: 0.1rem;
   }
 
@@ -586,7 +562,7 @@ body {
   }
 
   .githubSm h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 3rem;
     line-height: 2.2rem;
@@ -594,10 +570,6 @@ body {
 
   .container {
     width: 90%;
-  }
-
-  .profiles {
-    display: none;
   }
 
   .header h1 {
@@ -642,102 +614,22 @@ body {
     display: none;
   }
 
-  .project-text-center p br {
-    display: none;
-  }
-
-  .email {
-    display: none;
-  }
-
   .copyright {
     font-size: 1rem;
   }
-  .profiles-sm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4rem 0 -2rem 0;
-    padding: 0px;
-    list-style: none;
-    gap: 25px;
-    font-size: 1.4rem;
+
+  .project img {
+    width: 100%;
+    height: 100%;
   }
-  .profiles-sm a {
-    color: rgba(255, 255, 255, 0.815);
+
+  .project-text {
+    width: 800px;
   }
 }
 
-
 @media screen and (max-width: 767px) {
-  .container {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .githubSm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .githubSm h3 b {
-    font-size: 0.9rem;
-    color: #4db5ff;
-    margin-right: 0.5rem;
-  }
-
-  .githubSm h3 {
-    color: #4db5ff;
-    font-weight: 400;
-    font-size: 1rem;
-    margin-left: 0.1rem;
-  }
-
-  .githubSm h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.815);
-  }
-
-  .githubSm i {
-    font-size: 6rem;
-    color: rgba(255, 255, 255, 0.815);
-  }
-
-  .githubSm h1 {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 3rem;
-    line-height: 1.7rem;
-  }
-
-  .project img {
-    display: none;
-  }
-
-  .about-img {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header h1 {
-    font-size: 2.4em;
-  }
-
-  .navbar button {
+  .resume {
     display: none;
   }
 
@@ -758,16 +650,17 @@ body {
     margin: 0 0 -1rem -1rem;
   }
 
-  .nav-items button {
+  .ul-resume {
+    display: block;
     padding: 1rem 2.5rem;
     border-radius: 0.4rem;
+    text-decoration: none;
     cursor: pointer;
     font-weight: 400;
     border: 1px solid #4db5ff;
     background-color: transparent;
-    color: #4db5ff;
+    color: #4db5ff !important;
     font-size: 1.2rem;
-    display: flex;
     margin-right: 1rem;
     margin-top: 2rem;
   }
@@ -777,8 +670,7 @@ body {
     height: 100%;
     position: fixed;
     top: 35px;
-    border-radius: 20px;
-    left: 0;
+    left: -2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -794,10 +686,11 @@ body {
 
   .nav-items li a {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .menuToggle {
+    display: block;
     position: relative;
     width: 30px;
     height: 30px;
@@ -820,128 +713,130 @@ body {
     display: none;
   }
 
-  .header h4 {
-    font-size: 1.2rem;
-  }
-
-  .header h2 {
-    font-size: 2.1em;
-    margin-bottom: 1em;
+  .project {
+    flex-direction: column;
+    position: relative;
   }
 
   .project-text {
+    position: absolute;
     margin-left: 0;
+    width: 400px;
+    left: 30px;
   }
-
-  .project-text p br {
-    display: none;
-  }
-
-  .project-text-center p br {
-    display: none;
-  }
-
-  .project-text-center {
-    margin-right: 0;
-  }
-
-  .work h3 {
-    margin-left: 0;
-    font-size: 1.4rem;
-  }
-
-  .about-content span {
-    font-size: 0.9rem;
+  
+  .project-text p {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
   }
 
   .project-text h4 {
     font-size: 1rem;
   }
 
-  .project-text-center h4 {
-    font-size: 1rem;
-  }
-
-  .project-text p {
-    font-size: 0.9rem;
-  }
-
-  .project-text-center p {
-    font-size: 0.9rem;
-  }
-
-  .about p br {
-    display: none;
-  }
-
-  .about-text p {
-    font-size: 0.85rem;
-  }
-
-  .about-text h3 {
-    font-size: 1.4rem;
-  }
-
-  .header p br {
-    display: none;
-  }
-
-  .header p {
-    line-height: 1.7em;
-  }
-
-  .profiles {
-    display: none;
-  }
-
-  .project {
-    margin-bottom: 2.5rem;
+  .project-text h2 {
+    font-size: 1.8rem;
   }
 
   .tech-used span {
     font-size: 0.9rem;
   }
 
-  .email {
+  .project img {
+    opacity: 0.2;
+  }
+
+  .project img:hover {
+    opacity: 0.3;
+  }
+
+  .view-project i {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .header p br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  .about-text p br {
     display: none;
   }
 
-  .copyright {
-    font-size: 0.9rem;
+  .project-text {
+    width: 350px;
+  }
+  
+  .project-text p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
   }
 
-  .profiles-sm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4rem 0 -2rem 0;
-    padding: 0px;
-    list-style: none;
-    gap: 25px;
-    font-size: 1.4rem;
+  .project-text h4 {
+    font-size: 0.82rem;
   }
 
-  .profiles-sm a {
-    color: rgba(255, 255, 255, 0.815);
+  .project-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .tech-used span {
+    font-size: 0.82rem;
   }
 }
 
-@media screen and (max-width: 375px) { 
-  .container {
-    width: 90%;
+@media screen and (max-width: 537px) {
+  .header h1 {
+    font-size: 2.5rem;
   }
 
-  .header {
-    font-size: 0.8rem;
+  .header h2 {
+    font-size: 2rem;
   }
 
   .header p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .about {
+    padding: 5rem 0;
+  }
+
+  .project-text { 
+    width: 85%;
+  }
+
+  .project img {
+    height: 25rem;
+  }
+
+  .copyright {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 280px) { 
-  .header {
+@media screen and (max-width: 375px) {
+  .githubSm h2 {
+    font-size: 2rem;
+  }
+
+  .githubSm h1 {
+    font-size: 1.05rem;
+  }
+
+  .githubSm h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  /* .header {
     font-size: 0.7rem;
   }
 
@@ -969,9 +864,5 @@ body {
 
   .project-text p {
     font-size: 0.8rem;
-  }
-  
-  .project-text-center p {
-    font-size: 0.8rem;
-  }
+  } */
 }
